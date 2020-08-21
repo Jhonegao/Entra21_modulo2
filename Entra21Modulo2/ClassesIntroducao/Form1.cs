@@ -16,5 +16,16 @@ namespace ClassesIntroducao
         {
             InitializeComponent();
         }
+        Cliente cli = new Cliente();
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            cli.Nome = "JHon";
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = cli.Nome;
+        }
     }
 }

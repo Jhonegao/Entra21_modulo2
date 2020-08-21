@@ -1,0 +1,10 @@
+C:\repositories\Entra21_modulo2\Entra21Modulo2\ClassesIntroducao\bin\Debug\ClassesIntroducao.exe.config
+C:\repositories\Entra21_modulo2\Entra21Modulo2\ClassesIntroducao\bin\Debug\ClassesIntroducao.exe
+C:\repositories\Entra21_modulo2\Entra21Modulo2\ClassesIntroducao\bin\Debug\ClassesIntroducao.pdb
+C:\repositories\Entra21_modulo2\Entra21Modulo2\ClassesIntroducao\obj\Debug\ClassesIntroducao.csprojAssemblyReference.cache
+C:\repositories\Entra21_modulo2\Entra21Modulo2\ClassesIntroducao\obj\Debug\ClassesIntroducao.Form1.resources
+C:\repositories\Entra21_modulo2\Entra21Modulo2\ClassesIntroducao\obj\Debug\ClassesIntroducao.Properties.Resources.resources
+C:\repositories\Entra21_modulo2\Entra21Modulo2\ClassesIntroducao\obj\Debug\ClassesIntroducao.csproj.GenerateResource.cache
+C:\repositories\Entra21_modulo2\Entra21Modulo2\ClassesIntroducao\obj\Debug\ClassesIntroducao.csproj.CoreCompileInputs.cache
+C:\repositories\Entra21_modulo2\Entra21Modulo2\ClassesIntroducao\obj\Debug\ClassesIntroducao.exe
+C:\repositories\Entra21_modulo2\Entra21Modulo2\ClassesIntroducao\obj\Debug\ClassesIntroducao.pdb

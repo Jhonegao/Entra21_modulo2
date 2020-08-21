@@ -1,0 +1,11 @@
+C:\repositories\Entra21_modulo2\Entra21Modulo2\FormEleicao2OO\bin\Debug\FormEleicao2OO.exe.config
+C:\repositories\Entra21_modulo2\Entra21Modulo2\FormEleicao2OO\bin\Debug\FormEleicao2OO.exe
+C:\repositories\Entra21_modulo2\Entra21Modulo2\FormEleicao2OO\bin\Debug\FormEleicao2OO.pdb
+C:\repositories\Entra21_modulo2\Entra21Modulo2\FormEleicao2OO\obj\Debug\FormEleicao2OO.csprojAssemblyReference.cache
+C:\repositories\Entra21_modulo2\Entra21Modulo2\FormEleicao2OO\obj\Debug\FormEleicao2OO.Properties.Resources.resources
+C:\repositories\Entra21_modulo2\Entra21Modulo2\FormEleicao2OO\obj\Debug\FormEleicao2OO.TelaInicial.resources
+C:\repositories\Entra21_modulo2\Entra21Modulo2\FormEleicao2OO\obj\Debug\FormEleicao2OO.csproj.GenerateResource.cache
+C:\repositories\Entra21_modulo2\Entra21Modulo2\FormEleicao2OO\obj\Debug\FormEleicao2OO.csproj.CoreCompileInputs.cache
+C:\repositories\Entra21_modulo2\Entra21Modulo2\FormEleicao2OO\obj\Debug\FormEleicao2OO.exe
+C:\repositories\Entra21_modulo2\Entra21Modulo2\FormEleicao2OO\obj\Debug\FormEleicao2OO.pdb
+C:\repositories\Entra21_modulo2\Entra21Modulo2\FormEleicao2OO\obj\Debug\FormEleicao2OO.FormVotos.resources
