@@ -8,12 +8,22 @@ namespace FormEleicao2OO
 {
     public class Eleicao
     {
-        public List<Candidato> _ListCandidatos { get; set; }
-        public List<Candidato> _ListElegiveis { get; set; }
+        public List<Candidato> _ListCandidatos { get; private set; }
+        public List<Candidato> _ListElegiveis { get; private set; }
         public Eleicao()
         {
-            _ListCandidatos = new List<Candidato>();
-            _ListElegiveis = new List<Candidato>();
+            this._ListCandidatos = new List<Candidato>();
+            this._ListElegiveis = new List<Candidato>();
+        }
+
+        public void CadastrarCandidato(Candidato candidatoCadastrado)
+        {
+
+        }
+
+        public void AdicionarEleicao(Candidato cancidatoElegivel)
+        {
+
         }
     }
 }

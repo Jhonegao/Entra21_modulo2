@@ -17,11 +17,12 @@ namespace FormEleicao2OO
         {
             InitializeComponent();
         }
-        Candidato c1 = new Candidato();
-        Candidato c2 = new Candidato();
-        Candidato c3 = new Candidato();
+        Candidato c1 = new Candidato("Pernalonga","11",Resources.c1);
+        Candidato c2 = new Candidato("Frajola", "112", Resources.c2);
+        Candidato c3 = new Candidato("Taz", "23", Resources.c3);
         Eleicao CandidatosListas = new Eleicao();
         public int posicao = -1;
+        #region Metodos
         public void LimparCampos()
         {
             txtNomeCandidato.Clear();
@@ -58,20 +59,12 @@ namespace FormEleicao2OO
         private void TelaInicial_Load(object sender, EventArgs e)
         {
             //fazer load da pré lista de candidatos
-            c1.Nome = "joao";
-            c1.Numero = "11";
-            c1.Foto = Resources.c1;
-            c2.Nome = "kkkkk";
-            c2.Numero = "112";
-            c2.Foto = Resources.c2;
-            c3.Nome = "oooooo";
-            c3.Numero = "23";
-            c3.Foto = Resources.c3;
-
             CandidatosListas._ListCandidatos.Add(c1);
             CandidatosListas._ListCandidatos.Add(c2);
             CandidatosListas._ListCandidatos.Add(c3);
         }
+
+        #endregion
 
         private void btnCadastrarNovo_Click(object sender, EventArgs e)
         {
@@ -83,12 +76,12 @@ namespace FormEleicao2OO
         }
         private void btnCadastroOK_Click(object sender, EventArgs e)
         {
-            Candidato candidatoACadastrar = new Candidato();
+            Candidato c = new Candidato();
             Validators validacoes = new Validators();
-            candidatoACadastrar.Nome = txtNomeCandidato.Text;
-            candidatoACadastrar.Numero = txtNumeroCandidato.Text;
-            candidatoACadastrar.Foto = pbFotosCandidatos.Image;
-            string erros = validacoes.Validar(candidatoACadastrar);
+            c.Nome = txtNomeCandidato.Text;
+            c.Numero = txtNumeroCandidato.Text;
+            c.Foto = pbFotosCandidatos.Image;
+            string erros = validacoes.Validar(c);
             if (erros != "")
             {
                 MessageBox.Show(erros);
@@ -96,7 +89,7 @@ namespace FormEleicao2OO
             else
             {
                 ControleBotoes(false);
-                CandidatosListas._ListCandidatos.Add(candidatoACadastrar);
+                CandidatosListas._ListCandidatos.Add(c);
             }
         }
         private void btnEscolherImagem_Click(object sender, EventArgs e)
@@ -112,7 +105,7 @@ namespace FormEleicao2OO
         {
             if (posicao < 0)
             {
-                MessageBox.Show("WORK");
+                MessageBox.Show("Selecione um Candidato");
             }
             else
             {
@@ -126,11 +119,27 @@ namespace FormEleicao2OO
         }
         private void btnNext_Click(object sender, EventArgs e)
         {
-            posicao = ListarCandidato(true, posicao);
+            if (CandidatosListas._ListCandidatos.Count <= 0)
+            {
+                //mensagem de cadastro
+                return;
+            }
+            else
+            {
+                posicao = ListarCandidato(true, posicao);
+            }
         }
         private void btnPrevious_Click(object sender, EventArgs e)
         {
-            posicao = ListarCandidato(false, posicao);                              
+            if (CandidatosListas._ListCandidatos.Count <= 0)
+            {
+                //mensagem de cadastro
+                return;
+            }
+            else
+            {
+                posicao = ListarCandidato(false, posicao);
+            }
         }
         private void btnIniciarVotacao_Click(object sender, EventArgs e)
         {
